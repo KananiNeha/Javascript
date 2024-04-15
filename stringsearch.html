@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="index"></p>
+    <p id="lastindex"></p>
+    <p id="search"></p>
+    <p id="match"></p>
+    <p id="inc"></p>
+    <p id="startwith"></p>
+    <p id="endwith"></p>
+    <script>
+        let str="Please locate  where 'locate' occurs!";
+        document.getElementById("index").innerHTML="The index value of locate is:"+str.indexOf("locate");
+    </script>
+    <script>
+        let str1="Please locate where 'locate' occurs! 'locate'";
+        document.getElementById("lastindex").innerHTML="The last index value of locate is:"+str1.lastIndexOf("locate");
+    </script>
+    <script>
+        let str2="Please locate where 'locate' occcurs!";
+        document.getElementById("search").innerHTML="locate serch and their index is:"+str2.search("locate");
+    </script>
+    <script>
+        let text="The rain is SPAIN stays mainly in the plain";
+        document.getElementById("match").innerHTML="String Match:"+text.match(/ain/g);
+    </script>
+    <script>
+        let text1="Hello world,welcome to the universe.";
+        document.getElementById("inc").innerHTML=text1.includes("world");
+    </script>
+    <script>
+        let text2="Hello world,welcome to the universe.";
+        document.getElementById("startwith").innerHTML=text2.startsWith("Hello");
+    </script>
+    <script>
+        let text3="John Doe";
+        document.getElementById("endwith").innerHTML=text3.endsWith("Doe");
+    </script>
+</body>
+</html>
