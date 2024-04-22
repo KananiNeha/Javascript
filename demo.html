@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha's Butterfly</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        class Car {
+            constructor(name, year, md){
+                this.name = name;
+                this.year = year;
+                this.md = md;
+            }
+        }
+        const myCar1 = new Car("Neha",21,"2024-05-01");
+        const myCar2 = new Car("Tanvi",21,"2024-05-01");
+        document.getElementById("demo").innerHTML = myCar1.name + "<br>" + myCar1.year + "<br>" + myCar1.md + "<br><br>" + myCar2.name + "<br>" + myCar2.year + "<br>" + myCar2.md;
+    </script>
+</body>
+</html>
